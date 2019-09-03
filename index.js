@@ -6,11 +6,11 @@ function findMatching(drivers, string) {
 
 function fuzzyMatch(drivers, string) {
 
-   let matchingFuzzy = drivers.filter(function (match) {return match.startsWith(string)})
-  return matchingFuzzy;
+   let matchingDrivers = drivers.filter(function (match) {return match.startsWith(string)})
+  return matchingDrivers;
 }
 
 function matchName(drivers, string) {
   let matchingDrivers = drivers.filter(function (match) {return match.name === string})
-  return matchingDrivers
+  return matchingDrivers;
 }
